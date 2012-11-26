@@ -25,7 +25,7 @@ setup(
         author='PN',
         author_email='pn.appdev@gmail.com',
         url='https://github.com/pnpnpn/street-address',
-        packages=['street-address'],
+        packages=['streetaddress'],
         install_requires=[],
         #test_suite='tests',
         classifiers=CLASSIFIERS)

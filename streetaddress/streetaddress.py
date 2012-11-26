@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-
-    street-address.street-address
+    streetaddress.streetaddress
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     :copyright: (c) 2012 by PN.
