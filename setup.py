@@ -27,7 +27,7 @@ setup(
         url='https://github.com/pnpnpn/street-address',
         packages=['streetaddress'],
         install_requires=[],
-        #test_suite='tests',
+        test_suite='tests',
         classifiers=CLASSIFIERS)
 
 
