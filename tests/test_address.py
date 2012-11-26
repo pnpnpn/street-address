@@ -3,8 +3,10 @@
 
 import logging
 import json
+import unittest
 from optparse import OptionParser
 from streetaddress import StreetAddressFormatter, StreetAddressParser
+
 
 
 ########################################################################
@@ -80,12 +82,6 @@ Examples:
     for t in lst:
         if t:
             print '"%s"' % t
-            #addr = streetAddress.parseString(t, parseAll=True)
-            #print "Number:", addr.street.number
-            #print "Street:", addr.street.name
-            #print "Type:", addr.street.type
-            #if addr.street.boxnumber:
-            #    print "Box:", addr.street.boxnumber
             logging.info('addr_str: ' + unicode(t))
             addr = addr_parser.parse(t)
 
