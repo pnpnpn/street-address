@@ -13,7 +13,7 @@ From source code: ::
 
 From pypi: ::
 
-    pip install mysolr
+    pip install street-address
 
 Usage
 -----
