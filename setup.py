@@ -15,11 +15,11 @@ CLASSIFIERS=[
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Topic :: Software Development :: Libraries :: Python Modules'
-    ],
+    ]
 
 setup( 
         name='street-address',
-        version='0.1.0',
+        version='0.1.1',
         description='Street address parser and formatter',
         long_description = open('README.rst').read(),
         author='PN',
