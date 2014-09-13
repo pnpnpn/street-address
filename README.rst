@@ -48,3 +48,8 @@ Acknowledgement
 ---------------
 
 Based on test cases from http://pyparsing.wikispaces.com/file/view/streetAddressParser.py
+
+
+Contribute
+------------
+I would love for you to fork and send me pull request for this project. Please contribute. 
