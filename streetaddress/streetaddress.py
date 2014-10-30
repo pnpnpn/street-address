@@ -18,7 +18,7 @@ import re
 class StreetAddressParser():
     def __init__(self):
         abbrev_suffix_map = get_abbrev_suffix_dict()
-        self.street_type_set = set(abbrev_suffix_map.keys() + abbrev_suffix_map.values())
+        self.street_type_set = set(abbrev_suffix_map.keys()) | set(abbrev_suffix_map.values())
 
         self.text2num_dict = get_text2num_dict()
         self.suite_type_set = set([
@@ -181,7 +181,7 @@ class StreetAddressFormatter():
     def __init__(self):
         #abbreviate west, east, north, south?
         self.abbrev_suffix_map = get_abbrev_suffix_dict()
-        self.street_type_set = set(self.abbrev_suffix_map.keys() + self.abbrev_suffix_map.values())
+        self.street_type_set = set(self.abbrev_suffix_map.keys()) | set(self.abbrev_suffix_map.values())
         self.abbrev_direction_map = {
             'east' : 'E',
             'west' : 'W', 
