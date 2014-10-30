@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pnpnpn/street-address.svg?branch=master)](https://travis-ci.org/pnpnpn/street-address)
+
 street-address
 ================
 
