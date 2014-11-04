@@ -19,7 +19,7 @@ CLASSIFIERS=[
 
 setup( 
         name='street-address',
-        version='0.1.1',
+        version='0.2.0',
         description='Street address parser and formatter',
         long_description = open('README.md').read(),
         author='PN',
