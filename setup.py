@@ -21,7 +21,7 @@ setup(
         name='street-address',
         version='0.1.1',
         description='Street address parser and formatter',
-        long_description = open('README.rst').read(),
+        long_description = open('README.md').read(),
         author='PN',
         author_email='pn.appdev@gmail.com',
         url='https://github.com/pnpnpn/street-address',
