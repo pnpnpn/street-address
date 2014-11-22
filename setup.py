@@ -7,6 +7,12 @@ except ImportError:
     from distutils.core import setup
 
 
+try:
+    long_description = open('README.md').read()
+except:
+    long_description = u'Street address parser and formatter'
+
+
 CLASSIFIERS=[
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
@@ -21,7 +27,7 @@ setup(
         name='street-address',
         version='0.2.0',
         description='Street address parser and formatter',
-        long_description = open('README.md').read(),
+        long_description=long_description,
         author='PN',
         author_email='pn.appdev@gmail.com',
         url='https://github.com/pnpnpn/street-address',
