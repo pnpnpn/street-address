@@ -10,6 +10,7 @@
 """
 
 import re
+import six
 
 ########################################################################
 # StreetAddressParser
@@ -50,7 +51,7 @@ class StreetAddressParser():
             start_idx = 0
         else:
             if tokens[0].lower() in self.text2num_dict:
-                res['house'] = unicode(self.text2num_dict[tokens[0].lower()])
+                res['house'] = six.text_type(self.text2num_dict[tokens[0].lower()])
                 start_idx = 1
             elif self.rec_st_nd_rd_th.search(tokens[0]):
                 #first token is actually a street number (not house)

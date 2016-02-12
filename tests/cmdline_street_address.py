@@ -3,6 +3,7 @@
 
 import logging
 import json
+import six
 import unittest
 from optparse import OptionParser
 from streetaddress import StreetAddressFormatter, StreetAddressParser
@@ -81,8 +82,8 @@ Examples:
 
     for t in lst:
         if t:
-            print '"%s"' % t
-            logging.info('addr_str: ' + unicode(t))
+            print('"%s"' % t)
+            logging.info('addr_str: ' + six.text_type(t))
             addr = addr_parser.parse(t)
 
             if addr['street_full'] is not None:
@@ -98,5 +99,5 @@ Examples:
                 street = addr_formatter.abbrev_street_avenue_etc(street, abbrev_only_last_token=False)
                 logging.info('After abbrev_street_avenue_etc (aggressive): ' + street)
 
-            print json.dumps(addr, sort_keys=True)
+            print(json.dumps(addr, sort_keys=True))
 
