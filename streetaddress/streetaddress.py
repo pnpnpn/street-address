@@ -23,8 +23,10 @@ class StreetAddressParser():
 
         self.text2num_dict = get_text2num_dict()
         self.suite_type_set = set([
-            'suite', 'ste', 'apt','apartment', 
+            'suite', 'ste',
+            'apt', 'apartment', 'apartme', 'apartemen', 'apartado', 'apartament',
             'room', 'rm', '#',
+            'unit', 'un', 'unt'
             ])
         self.rec_st_nd_rd_th = re.compile(r'^\d+(st|nd|rd|th)$', flags=re.I|re.U)
         self.rec_house_number = re.compile(r'^\d\S*$', flags=re.I|re.U)
@@ -138,6 +140,7 @@ def get_abbrev_suffix_dict():
             'court' : 'ct',
             'square' : 'sq',
             'loop' : 'lp',
+            'terrace': 'trc',
             }
 
 
