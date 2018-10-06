@@ -31,7 +31,7 @@ CLASSIFIERS=[
 
 setup( 
         name='street-address',
-        version='0.3.0',
+        version='0.4.0',
         description='Street address parser and formatter',
         long_description=long_description,
         author='PN',
