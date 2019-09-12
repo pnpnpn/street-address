@@ -1,9 +1,6 @@
 language: python
 python:
-- '2.6'
 - '2.7'
-- '3.2'
-- '3.3'
 - '3.4'
 - '3.5'
 - '3.6'
@@ -14,5 +11,5 @@ deploy:
   user: png
   password:
     secure: eBbfhZIiQy9bdQM7JbkLHNgZcUQ5wBwgDtQzcmaPOfOH+0RcAvaMzevVmW9l+lYhnO9aqjc5y/23ok11LzqxbQG/qbU5e75GB66zeLOXKk0ftm8kZTIXnjBj/fJeAGLJ78QW3d/27SlC7iAwFNE5dSeRNYb3ZUg/WkfYG1a/sBA=
-  on: 
+  on:
     python: 3.4
