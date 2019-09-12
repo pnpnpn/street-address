@@ -184,7 +184,7 @@ class StreetAddressFormatter():
         self.re_TH = re.compile(r'\b(\d+)\s+(%s)\.?$' % TH_or_str, flags=re.I | re.U)
 
     def st_nd_th_convert(self, num_str):
-        if len(num_str) >= 2 and (num_str[-2:] == '11' or num_str[-2:] == '12'):
+        if len(num_str) >= 2 and (num_str[-2:] == '11' or num_str[-2:] == '12' or num_str[-2:] == '13'):
             return num_str + 'th'
         elif num_str[-1] == '1':
             return num_str + 'st'
